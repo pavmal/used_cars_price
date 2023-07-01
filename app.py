@@ -45,7 +45,7 @@ def write_user_data(df):
 
 
 def write_prediction(prediction):
-    st.write("## Предсказание стоимости автомобиля")
+    st.write("## Приготовьте для покупки автомобиля $")
     st.info(f"{prediction:,.2f}")
 
 
@@ -63,7 +63,7 @@ def sidebar_input_features():
     km_driven = st.sidebar.slider("Пробег (км.)", min_value=1, max_value=1000000, value=300000, step=50)
     transmission = st.sidebar.selectbox("Коробка передач", ("Механика", "Автомат"))
     owner = st.sidebar.selectbox("Владелец по счёту", ("Первый", "Второй", "Третий", "Четвертый и более", "Test Drive"))
-    max_power = st.sidebar.slider("Мощность движка (тыс оборотов/мин)", min_value=30, max_value=400, value=90, step=10)
+    max_power = st.sidebar.slider("Мощность движка (тыс оборотов/мин)", min_value=30, max_value=400, value=120, step=10)
     seats = st.sidebar.slider("Количество мест в авто", min_value=1, max_value=14, value=5, step=1)
 
     convertor = {
