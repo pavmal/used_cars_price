@@ -19,6 +19,7 @@
 - seats (numeric, float; по смыслу categorical, int)
 
 ### Состав репозитория
+- EDA_cars.ipynb: файл с исследованием тренировочных данных
 - app.py: файл streamlit приложения
 - model.py: файл предобработки данных и загрузки модели
 - data/car.jpg: картинка для страницы
